@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+
+  <!-- Greeting -->
+  <h2 id="welcome">Hi</h2>
+
+  <!-- PDF Upload -->
+  <h3>Upload PDF</h3>
+  <form id="uploadForm" enctype="multipart/form-data">
+    <input type="file" id="pdfFile" name="pdf" accept="application/pdf" required />
+    <button type="submit">Upload</button>
+  </form>
+
+  <hr/>
+
+  <!-- Uploaded PDFs -->
+  <h3>Your PDFs</h3>
+  <ul id="pdfList"></ul>
+
+  <!-- Scripts -->
+  <script src="/static/js/dashboard.js"></script>
+</body>
+</html>
